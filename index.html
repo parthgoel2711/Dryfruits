@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mewana | Modern Artisanal Dry Fruits</title>
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Explore Mewana's modern, organic dry fruits. Featuring hand-sorted Mamra Almonds, Kerman Pistachios, W-180 Cashews, and Kashmiri Walnuts in high-end design packaging.">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- ================= SITE HEADER ================= -->
+  <header class="site-header" id="siteHeader">
+    <a href="#" class="logo" id="logoLink">
+      <svg class="logo-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M50 15 C35 30 30 50 50 85 C70 50 65 30 50 15 Z" stroke="#C87A53" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="50" cy="50" r="8" stroke="#E3C496" stroke-width="1.5"/>
+        <path d="M30 55 C38 62 42 62 50 55" stroke="#C87A53" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+      <span class="logo-text">Mewana<span>.</span></span>
+    </a>
+    
+    <nav>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#" class="nav-link" id="navHome">Home</a></li>
+        <li><a href="#philosophy" class="nav-link" id="navPhilosophy">Heritage</a></li>
+        <li><a href="#catalog" class="nav-link" id="navCatalog">Catalog</a></li>
+        <li><a href="#packaging" class="nav-link" id="navPackaging">Packaging</a></li>
+        <li><a href="#combos" class="nav-link" id="navCombos">Gifting</a></li>
+      </ul>
+    </nav>
+    
+    <div class="header-actions">
+      <button class="cart-trigger" id="cartTrigger" aria-label="Open Shopping Bag">
+        <i class="fa-solid fa-square-envelope" style="display:none;"></i> <!-- placeholder replacement -->
+        <i class="fa-solid fa-basket-shopping"></i>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- ================= HERO SECTION ================= -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <span class="mono-tag">// ESTABLISHED 2026</span>
+      <h1 class="hero-title">Nature's Finest Jewels. Sourced for the <span>Connoisseur</span>.</h1>
+      <p class="hero-desc">Mewana crafts single-origin organic dry fruits inside minimalist, custom-designed packaging cases that make a statement of elegance.</p>
+      <div class="hero-buttons">
+        <a href="#catalog" class="btn-editorial" id="btnExploreCollection">Explore Collection</a>
+        <a href="#packaging" class="btn-editorial-outline" id="btnLearnCraft">Packaging Design</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= BRAND PHILOSOPHY ================= -->
+  <section class="philosophy" id="philosophy">
+    <div class="philosophy-header">
+      <span class="mono-tag">// BRAND PHILOSOPHY</span>
+      <h2 class="section-title">Organically Cultivated. <span>Artisanally Curated.</span></h2>
+    </div>
+    
+    <div class="philosophy-grid">
+      <!-- Card 1 -->
+      <div class="philosophy-card" id="valOrganic">
+        <span class="philosophy-num">01 / INTEGRITY</span>
+        <h3>Pure Organic Sourcing</h3>
+        <p>Our crops are cultivated chemical-free in heritage micro-climates, slow sun-dried to preserve essential oils and organic nutrients.</p>
+      </div>
+      <!-- Card 2 -->
+      <div class="philosophy-card" id="valSingle">
+        <span class="philosophy-num">02 / RARITY</span>
+        <h3>Single-Origin Farms</h3>
+        <p>From Iran's Mamra trees to high-altitude Kashmiri orchards, we buy directly from local growers that harvest outstanding calibers.</p>
+      </div>
+      <!-- Card 3 -->
+      <div class="philosophy-card" id="valArtisanal">
+        <span class="philosophy-num">03 / DETAIL</span>
+        <h3>Bespoke Presentation</h3>
+        <p>Each box is designed in a matte black canvas with custom nut-shaped die-cut windows, turning e-commerce into a tactile ritual.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ASYMMETRICAL CATALOG SECTION ================= -->
+  <section class="catalog-section" id="catalog">
+    <div class="catalog-header">
+      <div class="catalog-header-text">
+        <span class="mono-tag">// THE SIGNATURE COLLECTION</span>
+        <h2 class="section-title">The Four Pillars of <span>Gastronomy</span></h2>
+      </div>
+      <div class="editorial-number">IV</div>
+    </div>
+    
+    <div class="asymmetric-catalog-grid">
+      
+      <!-- Product 1: Almond -->
+      <div class="product-row" id="prodAlmond">
+        <div class="prod-visual-block">
+          <div class="prod-img-frame">
+            <img src="assets/almonds.png" alt="Premium Mamra Almonds">
+          </div>
+          <span class="prod-float-badge">01 / ORIGIN: KERMAN, IRAN</span>
+        </div>
+        
+        <div class="prod-text-block">
+          <span class="mono-tag">CROP CLASS: EXQUISITE MAMRA</span>
+          <h3 class="prod-title">Mamra Almonds</h3>
+          <p class="prod-desc">Prized globally for their high natural almond oil concentration, rich nuttiness, and sweet finish. Sorted carefully for a distinct convex shape.</p>
+          
+          <div class="pkg-tab-container">
+            <h4 class="pkg-tab-title">Packaging Selection:</h4>
+            <div class="pkg-tabs" data-product="almond">
+              <button class="pkg-tab-btn active" data-pkg="pouch" data-weight="250g" data-price="18.00">
+                <span>Bespoke Matte Pouch</span>
+                <span class="pkg-tab-weight">250g</span>
+              </button>
+              <button class="pkg-tab-btn" data-pkg="jar" data-weight="400g" data-price="26.00">
+                <span>Imperial Glass Jar</span>
+                <span class="pkg-tab-weight">400g</span>
+              </button>
+              <button class="pkg-tab-btn" data-pkg="box" data-weight="500g" data-price="32.00">
+                <span>Signature Slide Drawer Box</span>
+                <span class="pkg-tab-weight">500g</span>
+              </button>
+            </div>
+          </div>
+          
+          <div class="prod-footer-row">
+            <div class="prod-price-box">
+              <span class="price-label">EST. COST</span>
+              <span class="price-value" id="price-almond">$18.00</span>
+            </div>
+            <button class="btn-bag-add" onclick="addToCart('almond')">Add to Bag</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 2: Pistachio (REVERSED) -->
+      <div class="product-row reverse" id="prodPistachio">
+        <div class="prod-visual-block">
+          <div class="prod-img-frame">
+            <img src="assets/pistachios.png" alt="Premium Kerman Pistachios">
+          </div>
+          <span class="prod-float-badge">02 / ORIGIN: RAFSANJAN, IRAN</span>
+        </div>
+        
+        <div class="prod-text-block">
+          <span class="mono-tag">CROP CLASS: JUMBO SAFFRON ROAST</span>
+          <h3 class="prod-title">Kerman Pistachios</h3>
+          <p class="prod-desc">Bright green kernels roasted lightly and dusted with sea salt. Offering a delicate texture and clean taste, full of healthy fatty acids.</p>
+          
+          <div class="pkg-tab-container">
+            <h4 class="pkg-tab-title">Packaging Selection:</h4>
+            <div class="pkg-tabs" data-product="pistachio">
+              <button class="pkg-tab-btn active" data-pkg="pouch" data-weight="250g" data-price="20.00">
+                <span>Bespoke Matte Pouch</span>
+                <span class="pkg-tab-weight">250g</span>
+              </button>
+              <button class="pkg-tab-btn" data-pkg="jar" data-weight="400g" data-price="28.00">
+                <span>Imperial Glass Jar</span>
+                <span class="pkg-tab-weight">400g</span>
+              </button>
+              <button class="pkg-tab-btn" data-pkg="box" data-weight="500g" data-price="35.00">
+                <span>Signature Slide Drawer Box</span>
+                <span class="pkg-tab-weight">500g</span>
+              </button>
+            </div>
+          </div>
+          
+          <div class="prod-footer-row">
+            <div class="prod-price-box">
+              <span class="price-label">EST. COST</span>
+              <span class="price-value" id="price-pistachio">$20.00</span>
+            </div>
+            <button class="btn-bag-add" onclick="addToCart('pistachio')">Add to Bag</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 3: Cashew -->
+      <div class="product-row" id="prodCashew">
+        <div class="prod-visual-block">
+          <div class="prod-img-frame">
+            <img src="assets/cashews.png" alt="Premium W-180 Cashews">
+          </div>
+          <span class="prod-float-badge">03 / ORIGIN: MANGALORE, INDIA</span>
+        </div>
+        
+        <div class="prod-text-block">
+          <span class="mono-tag">CROP CLASS: KING OF CASHEWS W-180</span>
+          <h3 class="prod-title">W-180 Cashews</h3>
+          <p class="prod-desc">Exceptionally large white kernels that provide a rich, creamy, and buttery mouthfeel. Slow-baked to create a perfect light crunch.</p>
+          
+          <div class="pkg-tab-container">
+            <h4 class="pkg-tab-title">Packaging Selection:</h4>
+            <div class="pkg-tabs" data-product="cashew">
+              <button class="pkg-tab-btn active" data-pkg="pouch" data-weight="280g" data-price="19.00">
+                <span>Bespoke Matte Pouch</span>
+                <span class="pkg-tab-weight">280g</span>
+              </button>
+              <button class="pkg-tab-btn" data-pkg="jar" data-weight="400g" data-price="27.00">
+                <span>Imperial Glass Jar</span>
+                <span class="pkg-tab-weight">400g</span>
+              </button>
+              <button class="pkg-tab-btn" data-pkg="box" data-weight="500g" data-price="33.00">
+                <span>Signature Slide Drawer Box</span>
+                <span class="pkg-tab-weight">500g</span>
+              </button>
+            </div>
+          </div>
+          
+          <div class="prod-footer-row">
+            <div class="prod-price-box">
+              <span class="price-label">EST. COST</span>
+              <span class="price-value" id="price-cashew">$19.00</span>
+            </div>
+            <button class="btn-bag-add" onclick="addToCart('cashew')">Add to Bag</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 4: Walnut (REVERSED) -->
+      <div class="product-row reverse" id="prodWalnut">
+        <div class="prod-visual-block">
+          <div class="prod-img-frame">
+            <img src="assets/walnuts.png" alt="Premium Kashmiri Walnuts">
+          </div>
+          <span class="prod-float-badge">04 / ORIGIN: ANANTNAG, KASHMIR</span>
+        </div>
+        
+        <div class="prod-text-block">
+          <span class="mono-tag">CROP CLASS: GOLDEN HALVES</span>
+          <h3 class="prod-title">Kashmiri Walnuts</h3>
+          <p class="prod-desc">Light golden halves hand-cracked in valleys. Sweeter profile with no bitter aftertaste, containing a high amount of Omega-3 fatty acids.</p>
+          
+          <div class="pkg-tab-container">
+            <h4 class="pkg-tab-title">Packaging Selection:</h4>
+            <div class="pkg-tabs" data-product="walnut">
+              <button class="pkg-tab-btn active" data-pkg="pouch" data-weight="250g" data-price="22.00">
+                <span>Bespoke Matte Pouch</span>
+                <span class="pkg-tab-weight">250g</span>
+              </button>
+              <button class="pkg-tab-btn" data-pkg="jar" data-weight="400g" data-price="30.00">
+                <span>Imperial Glass Jar</span>
+                <span class="pkg-tab-weight">400g</span>
+              </button>
+              <button class="pkg-tab-btn" data-pkg="box" data-weight="500g" data-price="38.00">
+                <span>Signature Slide Drawer Box</span>
+                <span class="pkg-tab-weight">500g</span>
+              </button>
+            </div>
+          </div>
+          
+          <div class="prod-footer-row">
+            <div class="prod-price-box">
+              <span class="price-label">EST. COST</span>
+              <span class="price-value" id="price-walnut">$22.00</span>
+            </div>
+            <button class="btn-bag-add" onclick="addToCart('walnut')">Add to Bag</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= PACKAGING SECTION ================= -->
+  <section class="packaging-section" id="packaging">
+    <div class="packaging-split">
+      <div class="packaging-left">
+        <span class="mono-tag">// PACKAGING ARCHITECTURE</span>
+        <h2 class="section-title">The Art of <span>Luxury Cases</span></h2>
+        <div class="fine-divider" style="margin: 25px 0;"></div>
+        <p style="font-size: 0.95rem; color: var(--text-secondary); font-weight: 300; line-height: 1.8;">
+          Designed with geometric precision, our signature matte black cases utilize die-cut window details and warm gold foil branding to deliver a tangible artistic experience.
+        </p>
+        
+        <div class="pkg-points">
+          <!-- Point 1 -->
+          <div class="pkg-point-item" id="ptWindow">
+            <span class="pkg-point-num">A</span>
+            <div class="pkg-point-desc">
+              <h4>Die-Cut Nut Profiles</h4>
+              <p>Pouches are detailed with custom windows matching the contours of the almond or cashew inside, bordered with gold outline.</p>
+            </div>
+          </div>
+          <!-- Point 2 -->
+          <div class="pkg-point-item" id="ptMaterial">
+            <span class="pkg-point-num">B</span>
+            <div class="pkg-point-desc">
+              <h4>Matte Soft-Touch Finish</h4>
+              <p>Constructed using luxury soft-touch papers that absorb light, highlighting the gold foil typography under warm room lights.</p>
+            </div>
+          </div>
+          <!-- Point 3 -->
+          <div class="pkg-point-item" id="ptDrawer">
+            <span class="pkg-point-num">C</span>
+            <div class="pkg-point-desc">
+              <h4>Flagship Sliding drawer Case</h4>
+              <p>Our assorted box contains separate compartments inside a pull-out sleeve drawer, finished with a fabric ribbon handle.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="packaging-right-visual">
+        <img src="assets/packaging.png" alt="Mewana Packaging Cases Mockup" class="pkg-mockup-img">
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CURATED COMBOS SECTION ================= -->
+  <section class="combos-section" id="combos">
+    <div class="combos-header">
+      <span class="mono-tag">// EXCLUSIVE SELECTION</span>
+      <h2 class="section-title">The Imperial Gifting <span>Hampers</span></h2>
+    </div>
+    
+    <div class="combos-layout">
+      <!-- Combo 1 -->
+      <div class="combo-panel" id="cbQuartet">
+        <span class="combo-meta-badge">01 / HAMPER SET</span>
+        <h3>The Grand Quartet Chest</h3>
+        <span class="combo-cost">$120.00</span>
+        <ul class="combo-includes">
+          <li>Mamra Almonds (250g Pouch)</li>
+          <li>Kerman Pistachios (250g Pouch)</li>
+          <li>W-180 Cashews (280g Pouch)</li>
+          <li>Kashmiri Walnuts (250g Pouch)</li>
+        </ul>
+        <button class="btn-editorial" onclick="addComboToCart('The Grand Quartet Chest', 120.00)">Initiate Gift</button>
+      </div>
+
+      <!-- Combo 2 -->
+      <div class="combo-panel" id="cbTwin">
+        <span class="combo-meta-badge">02 / DUET JAR SET</span>
+        <h3>The Signature Twin Tray</h3>
+        <span class="combo-cost">$62.00</span>
+        <ul class="combo-includes">
+          <li>Mamra Almonds (400g Imperial Jar)</li>
+          <li>Kerman Pistachios (400g Imperial Jar)</li>
+        </ul>
+        <button class="btn-editorial" onclick="addComboToCart('The Signature Twin Tray', 62.00)">Initiate Gift</button>
+      </div>
+
+      <!-- Combo 3 -->
+      <div class="combo-panel" id="cbDrawer">
+        <span class="combo-meta-badge">03 / SLIDE BOX</span>
+        <h3>Assorted Premium Box</h3>
+        <span class="combo-cost">$55.00</span>
+        <ul class="combo-includes">
+          <li>Assorted Premium Mix (500g Drawer Box)</li>
+          <li>Featuring Almonds, Cashews, & Pistachios</li>
+        </ul>
+        <button class="btn-editorial" onclick="addComboToCart('Assorted Premium Box (500g)', 55.00)">Initiate Gift</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= EDITORIAL REVIEWS SECTION ================= -->
+  <section class="reviews-section">
+    <div class="reviews-carousel">
+      <span class="quote-sign"><i class="fa-solid fa-quote-left"></i></span>
+      
+      <!-- Slide 1 -->
+      <div class="review-slide active" id="rvSlide1">
+        <p class="review-quote">"Mewana's Mamra almonds are of an extraordinary caliber, and their slide-out gift drawers are the only gift cases we present to our corporate partners. Utterly premium."</p>
+        <div class="review-author-box">
+          <span class="review-author-name">Alistair Vance</span>
+          <span class="review-author-title">Creative Director, Vance & Co.</span>
+        </div>
+      </div>
+      <!-- Slide 2 -->
+      <div class="review-slide" id="rvSlide2">
+        <p class="review-quote">"The W-180 cashews are enormous, and have this unique, creamy texture that melts in the mouth. The die-cut window packaging design is an elegant statement on my kitchen counter."</p>
+        <div class="review-author-box">
+          <span class="review-author-name">Helene Dubois</span>
+          <span class="review-author-title">Sommelier & Gastronome</span>
+        </div>
+      </div>
+      <!-- Slide 3 -->
+      <div class="review-slide" id="rvSlide3">
+        <p class="review-quote">"An organic product that delivers absolute premium luxury in both flavor and packaging. Sourcing and curation are stellar. Outstanding service."</p>
+        <div class="review-author-box">
+          <span class="review-author-name">Ranveer Brar</span>
+          <span class="review-author-title">Executive Chef</span>
+        </div>
+      </div>
+      
+      <!-- Dots -->
+      <div class="slider-dots">
+        <span class="slider-dot active" onclick="setTestimonial(0)"></span>
+        <span class="slider-dot" onclick="setTestimonial(1)"></span>
+        <span class="slider-dot" onclick="setTestimonial(2)"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER SECTION ================= -->
+  <footer class="site-footer">
+    <div class="footer-row">
+      <div class="footer-col" id="colBrand">
+        <h3 class="logo-text">Mewana<span>.</span></h3>
+        <p style="margin-top: 20px;">Sourcing only the top 3% of regional organic crops. Crafting luxury, artisanal dry fruits and curated hampers for global connoisseurs.</p>
+        <div class="social-flex">
+          <a href="#" class="social-icon-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="social-icon-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="social-icon-btn" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-col" id="colCollection">
+        <h3>Collection</h3>
+        <ul class="footer-link-list">
+          <li><a href="#catalog">Mamra Almonds</a></li>
+          <li><a href="#catalog">Kerman Pistachios</a></li>
+          <li><a href="#catalog">W-180 Cashews</a></li>
+          <li><a href="#catalog">Kashmiri Walnuts</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col" id="colInquiries">
+        <h3>Bespoke Gifting</h3>
+        <ul class="footer-link-list">
+          <li><a href="#">Custom Gift Design</a></li>
+          <li><a href="#">Corporate Hamper Inquiry</a></li>
+          <li><a href="#">Single Orchard Sourcing</a></li>
+          <li><a href="#">Private Tastings</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col" id="colNewsletter">
+        <h3>The Connoisseurs Circle</h3>
+        <p>Subscribe to receive invitations to private harvests, seasonal releases, and luxury gifting previews.</p>
+        <form class="newsletter-editorial-form" id="newsletterForm" onsubmit="event.preventDefault(); alert('Joined successfully.');">
+          <input type="email" placeholder="Your Email Address" class="newsletter-field" required id="newsletterEmail">
+          <button type="submit" class="newsletter-submit" aria-label="Submit Email"><i class="fa-solid fa-arrow-right-long"></i></button>
+        </form>
+      </div>
+    </div>
+    
+    <div class="footer-base">
+      <p>&copy; 2026 Mewana Premium Dry Fruits Co. All rights reserved.</p>
+      <p>ESTABLISHED IN HARMONY WITH NATURE</p>
+    </div>
+  </footer>
+
+  <!-- ================= CART DRAWER SYSTEM ================= -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <div class="cart-drawer-box" id="cartDrawer">
+    <div class="cart-box-header">
+      <h2>Selected Items</h2>
+      <button class="btn-close-cart" id="cartCloseBtn" aria-label="Close Bag"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    
+    <div class="cart-items-scroller" id="cartItems">
+      <!-- Injected dynamically -->
+    </div>
+    
+    <div class="cart-box-footer">
+      <div class="cart-summary-row">
+        <span>Cases Count</span>
+        <span id="cartPkgCount" style="font-family: var(--font-mono);">0</span>
+      </div>
+      <div class="cart-summary-row">
+        <span>Insured Courier Delivery</span>
+        <span style="color: var(--accent-sienna); font-weight: 500;">Complimentary</span>
+      </div>
+      
+      <label class="calligraphy-note-wrap" id="calligraphyWrap">
+        <input type="checkbox" id="giftWrapCheckbox">
+        <span>Calligraphy Card & Wrapping (+$5.00)</span>
+      </label>
+      
+      <div class="cart-summary-row total-bold">
+        <span>Total Sum</span>
+        <span id="cartTotalSum">$0.00</span>
+      </div>
+      
+      <button class="btn-checkout-init" id="checkoutBtn">Initiate Order Request</button>
+    </div>
+  </div>
+
+  <!-- ================= EDITORIAL CHECKOUT MODAL ================= -->
+  <div class="success-overlay-box" id="successModalOverlay">
+    <div class="success-card">
+      <span class="success-crown"><i class="fa-solid fa-crown"></i></span>
+      <h3>Order Request Initiated</h3>
+      <p>A private client consultant will contact you via email within 1 hour to finalize delivery schedules and calligraphic gift messages.</p>
+      <button class="btn-editorial" id="successCloseBtn">Continue Sourcing</button>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
