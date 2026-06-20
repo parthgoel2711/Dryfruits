@@ -26,9 +26,7 @@
     
     <nav>
       <ul class="nav-menu" id="navMenu">
-        <li><a href="#" class="nav-link" id="navHome">Home</a></li>
-        <li><a href="#philosophy" class="nav-link" id="navPhilosophy">Heritage</a></li>
-        <li><a href="#catalog" class="nav-link" id="navCatalog">Catalog</a></li>
+        <li><a href="#" class="nav-link" id="navHome">Collection</a></li>
         <li><a href="#packaging" class="nav-link" id="navPackaging">Packaging</a></li>
         <li><a href="#combos" class="nav-link" id="navCombos">Gifting</a></li>
       </ul>
@@ -36,7 +34,6 @@
     
     <div class="header-actions">
       <button class="cart-trigger" id="cartTrigger" aria-label="Open Shopping Bag">
-        <i class="fa-solid fa-square-envelope" style="display:none;"></i> <!-- placeholder replacement -->
         <i class="fa-solid fa-basket-shopping"></i>
         <span class="cart-count" id="cartCount">0</span>
       </button>
@@ -46,57 +43,14 @@
     </div>
   </header>
 
-  <!-- ================= HERO SECTION ================= -->
-  <section class="hero" id="home">
-    <div class="hero-bg"></div>
-    <div class="hero-content">
-      <span class="mono-tag">// ESTABLISHED 2026</span>
-      <h1 class="hero-title">Nature's Finest Jewels. Sourced for the <span>Connoisseur</span>.</h1>
-      <p class="hero-desc">Mewana crafts single-origin organic dry fruits inside minimalist, custom-designed packaging cases that make a statement of elegance.</p>
-      <div class="hero-buttons">
-        <a href="#catalog" class="btn-editorial" id="btnExploreCollection">Explore Collection</a>
-        <a href="#packaging" class="btn-editorial-outline" id="btnLearnCraft">Packaging Design</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= BRAND PHILOSOPHY ================= -->
-  <section class="philosophy" id="philosophy">
-    <div class="philosophy-header">
-      <span class="mono-tag">// BRAND PHILOSOPHY</span>
-      <h2 class="section-title">Organically Cultivated. <span>Artisanally Curated.</span></h2>
-    </div>
-    
-    <div class="philosophy-grid">
-      <!-- Card 1 -->
-      <div class="philosophy-card" id="valOrganic">
-        <span class="philosophy-num">01 / INTEGRITY</span>
-        <h3>Pure Organic Sourcing</h3>
-        <p>Our crops are cultivated chemical-free in heritage micro-climates, slow sun-dried to preserve essential oils and organic nutrients.</p>
-      </div>
-      <!-- Card 2 -->
-      <div class="philosophy-card" id="valSingle">
-        <span class="philosophy-num">02 / RARITY</span>
-        <h3>Single-Origin Farms</h3>
-        <p>From Iran's Mamra trees to high-altitude Kashmiri orchards, we buy directly from local growers that harvest outstanding calibers.</p>
-      </div>
-      <!-- Card 3 -->
-      <div class="philosophy-card" id="valArtisanal">
-        <span class="philosophy-num">03 / DETAIL</span>
-        <h3>Bespoke Presentation</h3>
-        <p>Each box is designed in a matte black canvas with custom nut-shaped die-cut windows, turning e-commerce into a tactile ritual.</p>
-      </div>
-    </div>
-  </section>
-
   <!-- ================= ASYMMETRICAL CATALOG SECTION ================= -->
   <section class="catalog-section" id="catalog">
-    <div class="catalog-header">
-      <div class="catalog-header-text">
-        <span class="mono-tag">// THE SIGNATURE COLLECTION</span>
-        <h2 class="section-title">The Four Pillars of <span>Gastronomy</span></h2>
-      </div>
-      <div class="editorial-number">IV</div>
+    
+    <!-- Editorial Page Title (Visible immediately on page load) -->
+    <div class="catalog-intro" id="catalogIntro">
+      <span class="mono-tag">// THE MEWANA EDITIONS</span>
+      <h1 class="catalog-main-title">Artisanal Jewels of the Earth</h1>
+      <div class="fine-divider" style="margin: 30px auto; max-width: 150px;"></div>
     </div>
     
     <div class="asymmetric-catalog-grid">
@@ -113,7 +67,7 @@
         <div class="prod-text-block">
           <span class="mono-tag">CROP CLASS: EXQUISITE MAMRA</span>
           <h3 class="prod-title">Mamra Almonds</h3>
-          <p class="prod-desc">Prized globally for their high natural almond oil concentration, rich nuttiness, and sweet finish. Sorted carefully for a distinct convex shape.</p>
+          <p class="prod-desc">Iranian Mamra almonds, prized for their exceptionally high natural oil content and distinct convex shape.</p>
           
           <div class="pkg-tab-container">
             <h4 class="pkg-tab-title">Packaging Selection:</h4>
@@ -155,7 +109,7 @@
         <div class="prod-text-block">
           <span class="mono-tag">CROP CLASS: JUMBO SAFFRON ROAST</span>
           <h3 class="prod-title">Kerman Pistachios</h3>
-          <p class="prod-desc">Bright green kernels roasted lightly and dusted with sea salt. Offering a delicate texture and clean taste, full of healthy fatty acids.</p>
+          <p class="prod-desc">Jumbo Kerman pistachios, gently saffron-roasted and dusted with organic pink salt.</p>
           
           <div class="pkg-tab-container">
             <h4 class="pkg-tab-title">Packaging Selection:</h4>
@@ -197,7 +151,7 @@
         <div class="prod-text-block">
           <span class="mono-tag">CROP CLASS: KING OF CASHEWS W-180</span>
           <h3 class="prod-title">W-180 Cashews</h3>
-          <p class="prod-desc">Exceptionally large white kernels that provide a rich, creamy, and buttery mouthfeel. Slow-baked to create a perfect light crunch.</p>
+          <p class="prod-desc">Velvety W-180 cashews, selected by hand for their colossal size and creamy flavor profile.</p>
           
           <div class="pkg-tab-container">
             <h4 class="pkg-tab-title">Packaging Selection:</h4>
@@ -239,7 +193,7 @@
         <div class="prod-text-block">
           <span class="mono-tag">CROP CLASS: GOLDEN HALVES</span>
           <h3 class="prod-title">Kashmiri Walnuts</h3>
-          <p class="prod-desc">Light golden halves hand-cracked in valleys. Sweeter profile with no bitter aftertaste, containing a high amount of Omega-3 fatty acids.</p>
+          <p class="prod-desc">Light golden Kashmiri walnut halves, slow sun-dried to offer a crisp bite with zero bitterness.</p>
           
           <div class="pkg-tab-container">
             <h4 class="pkg-tab-title">Packaging Selection:</h4>

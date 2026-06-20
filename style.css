@@ -198,9 +198,6 @@ button {
   z-index: 100;
   transition: var(--transition-smooth);
   border-bottom: 1px solid var(--border-color);
-}
-.site-header.scrolled {
-  height: 75px;
   background: rgba(14, 13, 12, 0.95);
   backdrop-filter: blur(10px);
 }
@@ -292,113 +289,20 @@ button {
   color: var(--text-primary);
 }
 
-/* Hero Section */
-.hero {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  padding: 0 8%;
-  overflow: hidden;
-  border-bottom: 1px solid var(--border-color);
-}
-.hero-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(180deg, rgba(14,13,12,0.5) 0%, rgba(14,13,12,0.95) 100%), url('assets/hero.png') no-repeat center center / cover;
-  z-index: 1;
-}
-.hero-content {
-  position: relative;
-  z-index: 2;
-  max-width: 800px;
-  margin-top: 60px;
-}
-.hero-title {
-  font-size: clamp(2.8rem, 6vw, 5.2rem);
-  line-height: 1.1;
-  font-weight: 300;
-  margin-bottom: 25px;
-}
-.hero-title span {
-  font-style: italic;
-  color: var(--accent-silk);
-  font-family: var(--font-serif);
-}
-.hero-desc {
-  font-size: clamp(0.95rem, 1.2vw, 1.15rem);
-  color: var(--text-secondary);
-  margin-bottom: 45px;
-  max-width: 600px;
-  font-weight: 300;
-}
-.hero-buttons {
-  display: flex;
-  gap: 25px;
-}
-
-/* Philosophy Section */
-.philosophy {
-  padding: 140px 8%;
-  border-bottom: 1px solid var(--border-color);
-}
-.philosophy-header {
-  max-width: 700px;
-  margin-bottom: 80px;
-}
-.philosophy-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 30px;
-}
-.philosophy-card {
-  padding: 40px 30px;
-  background: var(--bg-secondary);
-  border: 1px solid var(--border-color);
-  transition: var(--transition-smooth);
-}
-.philosophy-card:hover {
-  border-color: var(--border-color-light);
-}
-.philosophy-num {
-  font-family: var(--font-mono);
-  font-size: 0.8rem;
-  color: var(--accent-sienna);
-  margin-bottom: 30px;
-  display: block;
-}
-.philosophy-card h3 {
-  font-size: 1.25rem;
-  margin-bottom: 15px;
-  font-family: var(--font-sans);
-  font-weight: 500;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-}
-.philosophy-card p {
-  font-size: 0.88rem;
-  color: var(--text-secondary);
-  font-weight: 300;
-  line-height: 1.7;
-}
-
-/* ================= ASYMMETRICAL CATALOG SECTION ================= */
+/* ================= CATALOG SECTION ================= */
 .catalog-section {
-  padding: 140px 8%;
+  padding: 130px 8% 100px 8%;
   border-bottom: 1px solid var(--border-color);
 }
-.catalog-header {
-  margin-bottom: 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+.catalog-intro {
+  text-align: center;
+  margin-bottom: 90px;
 }
-.catalog-header-text {
-  max-width: 600px;
+.catalog-main-title {
+  font-size: clamp(2.5rem, 5vw, 4.2rem);
+  font-weight: 300;
+  letter-spacing: 0.01em;
+  margin-top: 10px;
 }
 
 /* Asymmetrical Grid Wrapper */
@@ -1199,10 +1103,6 @@ button {
   }
   .menu-toggle {
     display: block;
-  }
-  .hero-buttons {
-    flex-direction: column;
-    gap: 15px;
   }
   .footer-row {
     grid-template-columns: 1fr;
